@@ -2,6 +2,7 @@
   max-width: 984px;
   display: flex;
   flex-direction: column;
+  margin: 92px 302px 92px 148px;
 }
 .main__title {
   font-family: "Inter-Black", Arial, sans-serif;
@@ -24,6 +25,9 @@
 }
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
+  .main {
+    margin: 90px 24px 88px;
+  }
   .main__title {
     max-width: 707px;
     font-size: 45px;
@@ -31,6 +35,9 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 544px) {
+  .main {
+    margin: 64px 16px;
+  }
   .main__title {
     max-width: 288px;
     font-size: 32px;
