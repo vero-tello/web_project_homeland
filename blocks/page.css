@@ -1,0 +1,9 @@
+.page {
+  width: 100%;
+  background-color: #2a2c2f;
+  color: #fff;
+  margin: auto;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 20px;
+}

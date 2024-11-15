@@ -1,0 +1,25 @@
+.main {
+  max-width: 830px;
+  max-height: 607px;
+  display: flex;
+  flex-direction: column;
+}
+.main__title {
+  font-family: "Inter-Black", Arial, sans-serif;
+  font-size: 54px;
+  line-height: 58px;
+  text-align: left;
+}
+.main__text-cita {
+  font-size: 24px;
+  line-height: 34px;
+  text-align: left;
+}
+.main__text-author {
+  text-align: right;
+}
+.main__text-size_s {
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: left;
+}
