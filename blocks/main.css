@@ -23,3 +23,20 @@
   line-height: 1.63;
   text-align: left;
 }
+
+@media screen (min-width: 545px) and (max-width: 1024px) {
+  .main__title {
+    max-width: 707px;
+    max-height: 147px;
+    font-size: 45px;
+    line-height: 49px;
+  }
+}
+@media screen (min-width: 320px) and (max-width: 544px) {
+  .main__title {
+    max-width: 288px;
+    max-heigt: 175px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
