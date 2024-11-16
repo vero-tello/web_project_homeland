@@ -14,21 +14,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   width: 100%;
 }
 .header__title {
   max-width: 720px;
   font-family: "Inter-Black", Arial, sans-serif;
   font-size: 96px;
-  line-height: 100px;
+  line-height: 1.1;
   text-align: center;
 }
 .header__text {
   max-width: 720px;
   font-family: "Inter", Arial;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 64px;
 }
@@ -65,7 +66,8 @@
   .header__logo {
     max-width: 188px;
     max-height: 82px;
-    margin: 20px auto 50px;
+    margin: 20px auto 0;
+    padding-bottom: 50px;
   }
   .header__title {
     max-width: 228px;
