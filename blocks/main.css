@@ -26,21 +26,23 @@
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .main {
+    width: 90vw;
     margin: 90px 24px 88px;
   }
   .main__title {
     max-width: 707px;
     font-size: 45px;
-    line-height: 49px;
+    line-height: 1.1;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 544px) {
   .main {
+    max-height: auto;
     margin: 64px 16px;
   }
   .main__title {
     max-width: 288px;
     font-size: 32px;
-    line-height: 35px;
+    line-height: 1.1;
   }
 }
