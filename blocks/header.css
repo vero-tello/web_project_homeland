@@ -36,8 +36,8 @@
 .header__content-image {
   max-width: 984px;
   max-height: 615px;
-  margin: auto;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .header__image {
   width: 65vw;
@@ -68,7 +68,6 @@
   .header__logo {
     max-width: 188px;
     max-height: 82px;
-    margin: auto;
     padding-bottom: 50px;
   }
   .header__title {
