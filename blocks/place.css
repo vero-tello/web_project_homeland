@@ -1,0 +1,38 @@
+.place {
+  max-width: 987px;
+  display: flex;
+  flex-direction: column;
+  margin: 90px auto;
+}
+.place__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "title url-artist"
+    "image text"
+    "image text"
+    "buttom .";
+  gap: 48px 40px;
+}
+.place__title {
+  grid-area: title;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.place__url {
+  grid-area: url-artist;
+}
+
+.place__image {
+  grid-area: image;
+}
+.place__image-item {
+}
+.place__text {
+  grid-area: text;
+}
+.place__buttom {
+  grid-area: buttom;
+}
