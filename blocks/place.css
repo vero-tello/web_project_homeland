@@ -6,45 +6,54 @@
   gap: 80px;
 }
 .place__content {
-  height: 756px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px repeat(2, 1fr) 50px;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "title website"
+    "image text"
+    "buttom .";
   gap: 48px 40px;
 }
 .place__title {
+  grid-area: title;
   font-size: 72px;
   font-weight: 900;
   line-height: 1.1;
+  margin: 0;
 }
-.place__url {
-  font-size: 18px;
-  line-height: 1.3;
-  color: #fff;
-  text-decoration: none;
+.place__website {
+  grid-area: website;
+  margin: 0;
 }
-.place__url-artist {
+.place__website-label {
   font-size: 12px;
   font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
   color: #aaa;
-  line-height: 1.3;
+}
+.place__website-artist {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.4;
   text-decoration: none;
 }
 .place__image {
-  max-width: 460px;
-  max-height: 460px;
-  grid-row: 2/4;
+  grid-area: image;
 }
 .place__image-item {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   box-shadow: 10px 10px 25px 0px #00000080;
 }
 .place__image-item:hover {
   opacity: 50%;
 }
 .place__text {
-  grid-row: 2/4;
+  grid-area: text;
 }
 .place__text-item {
   font-size: 18px;
@@ -52,6 +61,7 @@
   line-height: 1.7;
 }
 .place__buttom {
+  grid-area: buttom;
   width: 289px;
   font-size: 18px;
   font-weight: 600;
@@ -69,4 +79,35 @@
     rgba(2, 120, 254, 0.25) 0%,
     rgba(0, 58, 123, 0.25) 99.98%
   );
+}
+
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .place {
+    max-width: 720px;
+    margin: 88px auto;
+    gap: 72px;
+  }
+  .place__content {
+    gap: 48px 28px;
+  }
+  .place__title {
+    font-size: 42px;
+  }
+  .place__text-item {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .place {
+    max-width: 320px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "text"
+      "button";
+    gap: 30px 0;
+  }
 }
