@@ -7,12 +7,12 @@
 }
 .place__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas:
     "title website"
     "image text"
-    "buttom .";
+    "buttom text";
   gap: 48px 40px;
 }
 .place__title {
@@ -42,10 +42,9 @@
 }
 .place__image {
   grid-area: image;
-}
-.place__image-item {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 460px;
   object-fit: cover;
   box-shadow: 10px 10px 25px 0px #00000080;
 }
@@ -63,13 +62,14 @@
 .place__buttom {
   grid-area: buttom;
   width: 289px;
+  height: fit-content;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
   padding: 13px 20px;
   border-radius: 4px 0px 0px 0px;
-  opacity: 0px;
+  opacity: 1;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px 0px #00000040;
 }
@@ -93,6 +93,9 @@
   .place__title {
     font-size: 42px;
   }
+  .place__image {
+    height: 340px;
+  }
   .place__text-item {
     font-size: 16px;
   }
@@ -100,6 +103,10 @@
 @media screen and (min-width: 320px) and (max-width: 544px) {
   .place {
     max-width: 320px;
+    margin: 62px auto;
+    gap: 50px;
+  }
+  .place__content {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
@@ -109,5 +116,11 @@
       "text"
       "button";
     gap: 30px 0;
+  }
+  .place__title {
+    font-size: 32px;
+  }
+  .place__image {
+    height: 320px;
   }
 }
