@@ -17,6 +17,7 @@
 }
 .place__title {
   grid-area: title;
+  width: 400px;
   font-size: 72px;
   font-weight: 900;
   line-height: 1.1;
@@ -24,6 +25,7 @@
 }
 .place__website {
   grid-area: website;
+  align-self: end;
   margin: 0;
 }
 .place__website-label {
@@ -39,6 +41,7 @@
   color: #fff;
   line-height: 1.4;
   text-decoration: none;
+  margin: 0;
 }
 .place__image {
   grid-area: image;
@@ -103,19 +106,13 @@
 @media screen and (min-width: 320px) and (max-width: 544px) {
   .place {
     max-width: 320px;
-    margin: 62px auto;
+    margin: 62px 0;
     gap: 50px;
+    padding: 7px;
   }
   .place__content {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-      "title"
-      "website"
-      "image"
-      "text"
-      "button";
-    gap: 30px 0;
+    display: block;
+    margin: 50px auto;
   }
   .place__title {
     font-size: 32px;
