@@ -9,6 +9,8 @@ De patria a patria nos muestra un poco mas de los lugares de origen de nuestros 
 Cáracteristicas:
 
 Flexbox
+Grid
+Grid área
 Metología BEM
 Diseño adaptativo
 CSS
