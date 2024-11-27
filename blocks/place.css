@@ -109,7 +109,7 @@
     max-width: 320px;
     margin: 62px 0;
     gap: 50px;
-    padding: 7px;
+    padding: 10px;
   }
   .place__content {
     display: block;
@@ -121,5 +121,8 @@
   }
   .place__image {
     height: 320px;
+  }
+  .place__buttom {
+    margin: 0 16px;
   }
 }
